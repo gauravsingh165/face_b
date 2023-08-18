@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :publications, class_name: 'Post', foreign_key: 'user_id'   
+  has_many :likes
 end
